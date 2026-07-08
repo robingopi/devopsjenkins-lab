@@ -32,7 +32,7 @@ sh 'cat /tmp/deployed_app.txt'
 }
 }
 post {
-success { echo 'Pipeline completed successfully!' }
+success { echo 'Pipeline completed really successfully!' }
 failure { echo 'Pipeline FAILED. Check logs above.' }
 }
 }
