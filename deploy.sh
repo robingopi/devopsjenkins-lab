@@ -9,4 +9,4 @@ sed -i "s/DEPLOY_TIME_PLACEHOLDER/$(date)/g" webapp/index.html
 sudo cp webapp/index.html /var/www/html/index.html
 sudo systemctl restart httpd || sudo systemctl restart apache2
 echo "[DEPLOY] Deployment v$VERSION complete!"
-echo "[DEPLOY] App running at http://$(curl -s http://51.20.44.150/latest/meta-data/public-ipv4)"
+echo "[DEPLOY] App running at http://$(curl -s http://169.254.169.254/latest/meta-data/public-ipv4)"
