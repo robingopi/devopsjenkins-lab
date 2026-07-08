@@ -15,8 +15,7 @@ stage('Build') {
 steps {
 echo "Building ${APP_NAME} version ${VERSION}"
 sh 'mkdir -p build && echo built > build/artifact.txt'
-}
-}
+}}
 stage('Test') {
 steps {
 echo 'Running tests...'
@@ -36,4 +35,3 @@ success { echo 'Pipeline completed successfully!' }
 failure { echo 'Pipeline FAILED. Check logs above.' }
 }
 }
-EOF
