@@ -15,7 +15,8 @@ stage('Build') {
 steps {
 echo "Building ${APP_NAME} version ${VERSION}"
 sh 'mkdir -p build && echo built > build/artifact.txt'
-}}
+}
+}
 stage('Test') {
 steps {
 echo 'Running tests...'
